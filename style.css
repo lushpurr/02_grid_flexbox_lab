@@ -1,0 +1,143 @@
+body {
+    font-family:helvetica, arial, sans-serif;
+    margin: 0;
+}
+
+body > header {
+    background-color: dodgerblue;
+    color:white;
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    padding: 10px
+
+}
+body > main {
+    width : 70%;
+    margin:  auto;
+}
+
+body > header > nav > a {
+    color:white;
+    background-color: rgb(139, 216, 139);
+    padding:23px;
+    border-radius:25px;
+}
+
+#top-row {
+    display:flex;
+    justify-content :space-evenly;
+}
+#mid-row {
+    background-color: navy;
+    color:white;
+    display: flex;
+}
+
+input[type="text"], textarea {
+    background-color : navy;
+    color :white;
+    box-shadow: gainsboro;
+}
+
+input[type="date"], textarea {
+    background-color : navy;
+    color :white;
+}
+
+input[list="travel-types"] {
+    background-color : navy;
+    color :white;
+}
+
+#italy {
+    grid-area: italy;
+
+}
+#brazil {
+    grid-area: brazil;
+
+}
+
+#america {
+    grid-area:america ;
+}
+
+#nepal{
+    grid-area: nepal;
+}
+
+#maldives{
+    grid-area: maldives;
+}
+
+#indonesia {
+    grid-area: indonesia ;
+}
+
+#header {
+    grid-area: header;
+    justify-self: center;
+}
+
+#grid-container-destinations {
+    display:grid;
+    grid-template-areas:
+        'header header header'
+        'italy brazil america'
+        'nepal maldives indonesia';
+    grid-template-columns: 3f 3f 3f;
+    grid-template-rows: 1f 2f 2f;
+    padding:10px;
+    margin:10px;
+}
+
+img {
+    max-width: 100%
+}
+
+#california {
+    grid-area: california;
+    background: url("images/california.jpg");
+    background-size: cover;
+}
+
+#korola {
+    grid-area: korola;
+}
+
+#london {
+    grid-area: london;
+}
+
+#miami {
+    grid-area:miami;
+}
+
+#california2 {
+    grid-area:california2;
+}
+
+#saintmartine {
+    grid-area:saintmartine;
+}
+
+#grid-container-places {
+    display:grid;
+    grid-template-areas:
+        'header-places header-places header-places'
+        'california korola london'
+        'miami california2 saintmartine';
+    grid-template-columns: 3f 3f 3f;
+    padding:10px;
+    margin:10px;
+}
+
+footer > section {
+    display:flex;
+    justify-content :space-evenly;
+}
+
+footer > section > hgroup > img {
+borde   r-radius: 50%;
+}
